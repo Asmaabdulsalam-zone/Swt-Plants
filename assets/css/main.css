@@ -3,7 +3,7 @@
 
 body {
   overflow-x: hidden;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -192,7 +192,8 @@ p {
     font-weight: 700; }
   @media (max-width: 768px) {
     .navbar {
-      font-size: 14px; }
+      font-size: 14px;
+      padding: 0.5rem 0rem !important; }
       .navbar .navbar-brand {
         font-size: 16px; } }
 
@@ -220,6 +221,11 @@ p {
     .home-section {
       padding: 17% 0% 2% !important;
       margin-bottom: 100px; } }
+  @media (max-width: 410px) {
+    .home-section {
+      padding: 20% 0% 2% !important; }
+      .home-section .h-100 {
+        min-height: 60vh; } }
 
 /* why us section */
 .why-us-section .why-us-item {
@@ -264,6 +270,11 @@ p {
   background-color: #f2b9b2; }
 .why-us-section .why-us-item:nth-child(3) {
   background-color: #7fa2fe; }
+@media (max-width: 410px) {
+  .why-us-section {
+    margin-bottom: 0px; }
+    .why-us-section .section-title {
+      margin-bottom: 30px; } }
 
 /* plant */
 .plants-section .gallery {
@@ -363,6 +374,9 @@ p {
     padding-top: 15px; }
   .contact-section .contact-form form .btn {
     width: 100%; }
+@media (max-width: 410px) {
+  .contact-section .contact-form {
+    padding: 30px 0px; } }
 
 /* footer */
 .footer {
@@ -418,6 +432,9 @@ p {
       @media (max-width: 568px) {
         .footer .footer-contact p i {
           left: 30%; } }
+      @media (max-width: 410px) {
+        .footer .footer-contact p i {
+          left: 20%; } }
   .footer .footer-newsletter .form-control {
     margin-bottom: 0px;
     text-align: center;
@@ -433,12 +450,22 @@ p {
     margin-top: 10px; }
 
 /* Loading */
+.loading-overlay {
+  background-color: #fbeedc;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  transform: translate(0, 50%); }
+
 .spinner {
   width: 40px;
   height: 40px;
   margin: 100px auto;
-  background-color: #333;
-  /*#fbeedc*/
+  background-color: #690f63;
   border-radius: 100%;
   -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
   animation: sk-scaleout 1.0s infinite ease-in-out; }
